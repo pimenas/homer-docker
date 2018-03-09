@@ -40,7 +40,7 @@ RUN chmod -R 755 /var/lib/mysql/
 WORKDIR /
 
 # HOMER 5
-RUN git clone --depth 1 https://github.com/sipcapture/homer-api.git /homer-api
+RUN git clone --depth 1 -b auvious https://github.com/pimenas/homer-api.git /homer-api
 RUN git clone --depth 1 https://github.com/sipcapture/homer-ui.git /homer-ui
 
 RUN chmod -R +x /homer-api/scripts/mysql/*
